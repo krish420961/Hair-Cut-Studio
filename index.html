@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair-Cut Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+
+    <section id="banner">
+        <img src="img/logo.png" class="logo" alt="">
+        <!-- heading nad button side start-->
+
+        <div class="banner-text">
+            <h1>Hair-Cut Studio</h1>
+            <p>Style Your Hair & Looking You Nice</p>
+
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+
+        <!-- heading nad button side end-->
+    </section>
+
+    <!-- navbar start  -->
+
+    <div id="sideNavbar">
+        <nav>
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#">Style Chart</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#footer">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="MenuBtn">
+        <img src="img/menu.png" id="menu" alt="menu">
+    </div>
+
+
+    <!-- javascript for navbar  -->
+    <script>
+        var MenuBtn = document.getElementById("MenuBtn");
+        var sideNavbar = document.getElementById("sideNavbar");
+        var menu = document.getElementById("menu");
+
+        sideNavbar.style.right = "-250px";
+
+        MenuBtn.onclick = function () {
+            if (sideNavbar.style.right == "-250px") {
+                sideNavbar.style.right = "0";
+                menu.src = "img/close.png";
+            } else {
+                sideNavbar.style.right = "-250px";
+                menu.src = "img/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- navbar end  -->
+
+    <!-- Features start -->
+    <section id="feature">
+        <div class="title-text">
+            <p>Features</p>
+            <h1>Why Choose Us</h1>
+            <!-- <hr> -->
+        </div>
+        <div class="feature-box">
+
+            <div class="features">
+                <!-- card-1 -->
+                <h1>Experienced Staff</h1>
+                <div class="features-desc">
+                    <div class="features-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="features-text">
+                        <p>Your wedding is such a special event. We help you
+                            design the perfect style to harmonize
+                            with your wedding dress.To help create that magical look,
+                            we can add hair pieces. </p>
+                    </div>
+                </div>
+                <!-- card-2.. -->
+                <h1>Pre Booking Online</h1>
+                <div class="features-desc">
+                    <div class="features-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+                    <div class="features-text">
+                        <p>Your wedding is such a special event. We help you
+                            design the perfect style to harmonize
+                            with your wedding dress.To help create that magical look,
+                            we can add hair pieces. </p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <h1>Afforadable Cost</h1>
+                <div class="features-desc">
+                    <div class="features-icon">
+                        <i class="fa fa-money"></i>
+                    </div>
+                    <div class="features-text">
+                        <p>Your wedding is such a special event. We help you
+                            design the perfect style to harmonize
+                            with your wedding dress.To help create that magical look,
+                            we can add hair pieces. </p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="img/barber-man01.jpeg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!-- Services -->
+
+    <section id="service">
+        <div class="title-text">
+            <p>Services</p>
+            <h1>We Provide Better</h1>
+            <!-- <hr> -->
+        </div>
+
+        <div class="service-box">
+            <div class="single-service">
+                <img src="img/pic1.1.jpeg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>Your top source for celebrity haircut and hairstyles. Find the best style for your face shape:
+                        browse our slideshows of hair trends, from bobs, short styles to color ideas and top wedding
+                        updos. Read reviews of the latest hair products and click through dramatic star transformations.
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/pic-2.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Your top source for celebrity haircut and hairstyles. Find the best style for your face shape:
+                        browse our slideshows of hair trends, from bobs, short styles to color ideas and top wedding
+                        updos. Read reviews of the latest hair products and click through dramatic star
+                        transformations.
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/pic-3.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Cut</h3>
+                    <hr>
+                    <p>Your top source for celebrity haircut and hairstyles. Find the best style for your face shape:
+                        browse our slideshows of hair trends, from bobs, short styles to color ideas and top wedding
+                        updos. Read reviews of the latest hair products and click through dramatic star
+                        transformations.
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/pic-4.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Dry Shmpoo/h3>
+                        <hr>
+                        <p>Your top source for celebrity haircut and hairstyles. Find the best style for your face
+                            shape:
+                            browse our slideshows of hair trends, from bobs, short styles to color ideas and top wedding
+                            updos. Read reviews of the latest hair products and click through dramatic star
+                            transformations.
+                        </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/pic-5.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>New Style</h3>
+                    <hr>
+                    <p>Your top source for celebrity haircut and hairstyles. Find the best style for your face shape:
+                        browse our slideshows of hair trends, from bobs, short styles to color ideas and top wedding
+                        updos. Read reviews of the latest hair products and click through dramatic star
+                        transformations.
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="img/pic-6.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Short</h3>
+                    <hr>
+                    <p>Your top source for celebrity haircut and hairstyles. Find the best style for your face shape:
+                        browse our slideshows of hair trends, from bobs, short styles to color ideas and top wedding
+                        updos. Read reviews of the latest hair products and click through dramati.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="Reviews">
+        <div class="title-text">
+            <p>Reviews</p>
+            <h1>What Client Says</h1>
+            <!-- <hr> -->
+        </div>
+
+        <div class="Reviews-row">
+            <div class="Reviews-col">
+                <div class="user">
+                    <img src="img/2.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Ken Norman <i class="fa fa-twitter"></i></h4>
+                        <small>@Krishna420</small>
+                    </div>
+                </div>
+                <p>
+                    The Hot Tools Behind Amal Clooney and Reese Witherspoon’s
+                    Best Hair Moments Are on Sale.Each product we feature has been independently selected and
+                    reviewed by our editorial team. If you make a purchase using the links included.
+
+                </p>
+            </div>
+
+            <div class="Reviews-col">
+                <div class="user">
+                    <img src="img/3.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Krishna <i class="fa fa-twitter"></i></h4>
+                        <small>@Manik420</small>
+                    </div>
+                </div>
+                <p>
+                    When Dianne Austin decided to ditch her relaxer and transition back to her natural hair in 2011,
+                    she had no idea that four years later she would be hit with the heartbreaking news.If you make a
+                    purchase using the links included.
+                </p>
+            </div>
+
+            <div class="Reviews-col">
+                <div class="user">
+                    <img src="img/img-3.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Saduka <i class="fa fa-twitter"></i></h4>
+                        <small>@Saduka420</small>
+                    </div>
+                </div>
+                <p>
+                    Some shampoos are just instantly recognizable. You’re walking through the store or browsing
+                    around online and bam, you see that pretty bottle that’s all over your Instagram feed.But a
+                    shampoo can’t just be known.If you make a purchase using the links included.
+                </p>
+            </div>
+
+            <div class="Reviews-col">
+                <div class="user">
+                    <img src="img/07.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Adi <i class="fa fa-twitter"></i></h4>
+                        <small>@Adi</small>
+                    </div>
+                </div>
+                <p>
+                    When Dianne Austin decided to ditch her relaxer and transition back to her natural hair in 2011,
+                    she had no idea that four years later she would be hit with the heartbreaking news.If you make a
+                    purchase using the links included.
+                </p>
+            </div>
+
+            <div class="Reviews-col">
+                <div class="user">
+                    <img src="img/06.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Kartik <i class="fa fa-twitter"></i></h4>
+                        <small>@Kartik</small>
+                    </div>
+                </div>
+                <p>
+                    When Dianne Austin decided to ditch her relaxer and transition back to her natural hair in
+                    2011,
+                    she had no idea that four years later she would be hit with the heartbreaking news.If you
+                    make a
+                    purchase using the links included.
+                </p>
+            </div>
+
+            <div class="Reviews-col">
+                <div class="user">
+                    <img src="img/04.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Jhon <i class="fa fa-twitter"></i></h4>
+                        <small>@jhonkabir</small>
+                    </div>
+                </div>
+                <p>
+                    When Dianne Austin decided to ditch her relaxer and transition back to her natural hair
+                    in 2011,
+                    she had no idea that four years later she would be hit with the heartbreaking news.If
+                    you make a
+                    purchase using the links included.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- <footer> -->
+    <section id="footer">
+        <img src="img/footer-img.png" class="footer-img" alt="">
+        <div class="title-text">
+            <p>Contact</p>
+            <h1>Visit Shop Now</h1>
+            <!-- <hr> -->
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Sanday To Thusday -9am to 10pm</p>
+                <p><i class="fa fa-clock-o"></i>Friday and Saturday - 8am to 3pm </p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p><i class="fa fa-map-marker"></i>#420, abc colonu, Mirzapur, Puran Dhaka</p>
+                <p><i class="fa fa-paper-plane"></i>Email:kdas00781@gmail, Website:krishnabd.com</p>
+                <p><i class="fa fa-phone"></i>01834490562,018562432,012365475</p>
+            </div>
+
+        </div>
+
+        <!-- ...Scroll page start... -->
+        
+            <div id="scroll-view">
+                <div class="Breaking-news">Breaking News</div>
+                <div class="scroll">
+                    <marquee align="top" behavior="scroll" direction="left" onmouseout="this.start();"
+                        onmouseover="this.stop();"> #বাউবির বিএ পরীক্ষায় জালিয়াতির আশ্রয় নেয়ার অভিযোগে নরসিংদীতে
+                        সংরক্ষিত মহিলা আসনের এমপি.#মায়োর্কোর কাছে ১-০ গোলে হেরে স্প্যানিশ লা লিগায় প্রথম পরাজয়ের
+                        স্বাদ পেলো রিয়াদ মাদ্রিদ। #চলচ্চিত্র শিল্পী সমিতির নির্বাচনকে ঘিরে এফডিসিতে উৎসবের আমেজ বিরাজ
+                        করছে। #আন্তর্জাতিক বিরতির পর ফিরেই লা লিগায় দারুণ জয় তুলে নিয়েছে বার্সেলোনা। #তথ্য ও যোগাযোগ
+                        প্রযুক্তিখাতে আগামীতে বাংলাদেশ নেতৃত্ব দিবে বলে আশা জানিয়েছেন প্রধানমন্ত্রীর. #ভোলার
+                        বোরহানউদ্দিনে পুলিশ ও গ্রামবাসীর মধ্যে সংঘর্ষ, দুজন নিহত ও আহত অর্ধশতাধিক। #সাংবাদিক দম্পতি
+                        সাগর-রুনি হত্যা মামলার তদন্ত সাত বছরেও শেষ না হওয়ায় তদন্ত কর্মকর্তাকে ৬ নভেম্বর হাইকোর্টে তলব।
+                        #রাজশাহী বিশ্ববিদ্যালয় ক্যাম্পাসে শিক্ষার্থী ফিরোজ আনামকে ছুরিকাঘাতের ঘটনায় ছাত্রলীগের দুই
+                        কর্মীকে গ্রেপ্তার করেছে পুলিশ। #সুপ্রিম কোর্টের হাইকোর্ট বিভাগে ‌আরো নয়জনকে অতিরিক্ত বিচারপতি
+                        হিসেবে নিয়োগ দিয়েছেন রাষ্ট্রপতি। #এমপি পদে থেকেও এ প্রশ্ন এত দিন পরে করছেন কেন—মেননকে ওবায়দুল
+                        কাদেরের প্রশ্ন। #কুরিয়ার সার্ভিসের মাধ্যমে ঘুষের কোটি কোটি টাকা পাঠানোর অভিযোগ অনুসন্ধানে কারা
+                        অধিদপ্তরের উপমহাপরিদর্শক বজলুর রশীদ ও তাঁর স্ত্রীকে দুদকে জিজ্ঞাসাবাদ। #চলমান সাইবার অপরাধ দমন
+                        করতে পুলিশ সদস্যদের আরো বেশি আধুনিক ও কৌশলী হতে হবে : দুদক চেয়ারম্যান।</marquee>
+                </div>
+            </div>
+        
+        <!-- ...scroll part end... -->
+
+        <!-- social media -->
+        <div class="social-links">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-youtube-play"></i>
+            <i class="fa fa fa-linkedin-square"></i>
+            <i class="fa fa-google-plus-square"></i>
+            <p>&reg;Copyright Create By Manik Chandra Saduka(Krishna Das)</p>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
